@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>00853029</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">CF</span>
+                <span class="last-name">CHANG</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">B0044@email.ntou.edu.tw</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">091234567</span>
+            </div>
+
+            <div>
+                <img src="789.jpg" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">Front-End Developer </span>
+                <span class="desc">
+                    HI~我是海洋大學校長張清風!
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">國立臺灣海洋大學副教授</div>
+                            <div class="addr">國立臺灣海洋大學水產養殖系系主任</div>
+                            <div class="duration">國立臺灣海洋大學校長</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">(1986/2~1990)</div>
+                            <div class="desc">(1986/08~1992/07)</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">中華海洋事業協會理事長中華海洋事業協會理事長</div>
+                            <div class="addr">亞太比較內分泌學會理事長</div>
+                            <div class="duration">國立臺灣海洋大學終身 特聘教授</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">(2016~)</div>
+                            <div class="desc">(2017~2022)</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">美國華盛頓州立大學 動物科學系</div>
+                            <div class="addr">美國華盛頓州立大學 動物科學系</div>
+                            <div class="duration">臺灣省立海洋學院 水產製造學系</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">(博士，1986)</div>
+                            <div class="desc">(碩士，1982)</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Akount</div>
+                            <div class="addr">國家講座教授</div>
+                            <div class="duration">(2006~)</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Fr developer</div>
+                            <div class="desc">did This and that</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Projects</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">DSP</div>
+                        <div class="text">本研究室主要以分子遺傳基因、細胞生物、細胞培養、生化、免疫與生理等方向探討水產動物 (魚類、蝦類與珊瑚等) 之生理、內分泌生殖與環境適應等重要生命科學之問題，著重在基礎及應用研究。主要研究方向為 (1) 激素基因及激素受體基因表現及調控，(2)內分泌生理，(3)生殖生理，(4) 環境適應生理，(5) 性別分化與性轉變 。</div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">DSP</div>
+                        <div class="text">研究所：內分泌學，魚類生殖生理學 。<br>大學部：生物學，魚類生理學，魚類生理學實驗。 <a href="http://ind.ntou.edu.tw/~cfchang/CF-Chang.htm">link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            CSS</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        生物學，魚類生理學，魚類生理學實驗
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
